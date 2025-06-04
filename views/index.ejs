@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="form p-10">
+            <form action="/login" method="post">
+                <input class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-800 hii"  type="text" placeholder="title goes here" name="login">
+                <textarea class="block w-full rounded-md outline-none mt-2 px-5 py-2 bg-zinc-800 resize-none hii" placeholder="write your task detail here" name="details"></textarea>
+                <input class="mt-2 hii bg-blue-600 rounded-md px-5 py-2" type="submit" value="Create Task">
+            </form>
+
+        </div>
+        <div class="tasks">
+
+        </div>
+    </div>
+
 </body>
 </html>
