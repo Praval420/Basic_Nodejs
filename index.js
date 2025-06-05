@@ -1,4 +1,5 @@
 const express=require('express');
+const fs = require('fs');
 const path=require('path');
 const app=express();
 
@@ -9,11 +10,15 @@ app.use(express.static(path.join(__dirname,'public'))); // giving the static pag
 
 
 app.get("/",function(req,res){
-    res.render('index');
+    fs.readdir('./files',function(err,files){  // here files is the array that contains the names of the files
+        res.render('index',{files:files}); 
+    });
 })
 
 app.post("/login",function(req,res){
-    console.log(req.body);
+    fs.writeFile(`./files/${req.body.login.split(' ').join('')}.txt`,req.body.details,function(err){
+        console.log("error found");
+    });
     res.redirect('/');
 })
 

@@ -1,3 +1,20 @@
 .hii{
     color: white;
 }
+li{
+    color:white;
+}
+.tasks{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+}
+button{
+    color: rgb(94, 94, 241);
+}
+.uni{
+    height: 100px;
+    width:200px;
+    border: 2px solid yellow;
+}

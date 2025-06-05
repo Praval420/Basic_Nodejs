@@ -17,10 +17,20 @@
             </form>
 
         </div>
-        <div class="tasks">
-
+       <div>
+                <div class="tasks">
+                    <% files.forEach(ele => { %>
+                        <div class="uni">
+                             <ul>
+                                 <li><%= ele %></li>
+                                 
+                            </ul>
+                            <button>Read more</button>
+                         </div>
+                    <% }) %>
+                </div>
         </div>
-    </div>
+    </div>  
 
 </body>
 </html>
