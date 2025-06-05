@@ -25,7 +25,11 @@
                                  <li><%= ele %></li>
                                  
                             </ul>
-                            <button>Read more</button>
+                            <div class="flex justify-between">
+                            <a href="/files/<%= ele %>">Read more</a>
+                            <a href="/edit/<%= ele %>">edit</a>
+                            </div>
+                            
                          </div>
                     <% }) %>
                 </div>

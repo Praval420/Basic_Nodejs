@@ -10,7 +10,7 @@ li{
     flex: 1;
     justify-content: space-between;
 }
-button{
+a{
     color: rgb(94, 94, 241);
 }
 .uni{
